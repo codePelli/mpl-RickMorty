@@ -1,0 +1,13 @@
+@if (characterDetails) {
+    <div class="col-md-12">
+        <div class="card mb-4" id="detailCard">
+            <img [src]="characterDetails.image" class="card-img-top" alt="{{ characterDetails.name }}">
+        <h2 class="card-title">{{ characterDetails.name }}</h2>
+        <p class="card-text">Gender: {{ characterDetails.gender }}</p>
+        <p class="card-text">Species: {{ characterDetails.species }}</p>
+        <p class="card-text">Status: {{ characterDetails.status }}</p>
+        <p class="card-text">Origin: {{ characterDetails.origin.name }}</p>
+        </div>
+    </div>
+}
+

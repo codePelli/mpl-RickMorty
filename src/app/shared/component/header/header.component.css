@@ -1,0 +1,23 @@
+nav{
+    background-color: black !important;
+}
+
+a{
+    color: azure;
+}
+
+:hover a{
+    color: aliceblue;
+}
+
+#navbarSupportedContent{
+    margin-left: 640px;
+}
+
+form{
+    margin-right: 293px;
+}
+
+.navbar-brand{
+    margin-left: 295px;
+}
