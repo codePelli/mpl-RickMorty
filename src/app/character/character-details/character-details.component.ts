@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { CharactersService } from '../../services/characters.service';
+import { UppercasePipe } from "../../pipes/uppercase.pipe";
 
 @Component({
-  selector: 'app-character-details',
-  standalone: true,
-  imports: [],
-  templateUrl: './character-details.component.html',
-  styleUrl: './character-details.component.css'
+    selector: 'app-character-details',
+    standalone: true,
+    templateUrl: './character-details.component.html',
+    styleUrl: './character-details.component.css',
+    imports: [UppercasePipe]
 })
 export class CharacterDetailsComponent implements OnInit{
 
