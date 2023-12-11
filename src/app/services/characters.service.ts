@@ -12,12 +12,12 @@ export class CharactersService {
   constructor(private http: HttpClient) { }
 
   getCharacters(): Observable<any>{
-    for (let x = 0; x < 20; x++){
-      this.apiUrl = this.apiUrl + this.randomChars(1, 826) + ',';
-    }
-    return this.http.get<any>(this.apiUrl);
+    let randomIds = Array.from({ length: 20 }, () => this.randomChars(1, 826));
+    let apiUrlWithIds = this.apiUrl + randomIds.join(',');
 
+    return this.http.get<any>(apiUrlWithIds);
   }
+  
   randomChars(min: number, max: number): number {
     return Math.floor(Math.random() * (max - min + 1)) + min;
     }
