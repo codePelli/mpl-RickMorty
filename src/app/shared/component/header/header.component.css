@@ -1,3 +1,7 @@
-a:hover{
+a:hover {
     color: rgb(58, 112, 42);
+}
+
+#title {
+    height: 40px;
 }
